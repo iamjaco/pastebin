@@ -1,4 +1,6 @@
-from flask import Flask, render_template, request, redirect, url_for, abort
+import sqlite3
+from sqlite3 import Error
+from flask import g, Flask, render_template, request, redirect, url_for, abort
 from flask_bootstrap import Bootstrap
 
 app = Flask(__name__)

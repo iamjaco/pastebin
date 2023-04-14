@@ -6,7 +6,9 @@
             <h2>Paste #{{index + 1}}</h2>
         </div>
         <div class="card-body">
-            <pre>{{ content }}</pre>
+            <div class="pre-scrollable" style="white-space: pre-wrap;">
+                {{ content }}
+            </div>
         </div>
     </div>
 {% endblock %}

@@ -1,11 +1,15 @@
 {% extends "base.html" %}
 
 {% block content %}
-    <h1 class="mt-3">Flask Pastebin</h1>
-    <form action="{{ url_for('index') }}" method="post">
-        <div class="mb-3 mt-3">
-            <textarea class="form-control" id="content" name="content" rows="10"></textarea>
+    <div class="row justify-content-center mt-3">
+        <div class="col-lg-8">
+            <h1>Flask Pastebin</h1>
+            <form action="{{ url_for('index') }}" method="post">
+                <div class="mb-3 mt-3">
+                    <textarea class="form-control" id="content" name="content" rows="10"></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
         </div>
-        <button type="submit" class="btn btn-primary">Submit</button>
-    </form>
+    </div>
 {% endblock %}
